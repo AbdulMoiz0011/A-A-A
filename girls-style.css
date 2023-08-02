@@ -1,0 +1,334 @@
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+.home-icon{
+    padding: 20px 0 0 10px;
+    font-size: 20px;
+}
+.whatsapp-icon{
+    padding: 20px 10px 0 0;
+    font-size: 25px;
+}
+.logo{
+    width: 500px;
+    height: 400px;
+}
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+.collection{
+    font-size: 30px;
+    font-family: 'Carter One', cursive;
+}
+.products-parent{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    opacity: .5;
+    animation: moveUp 2.5s forwards; /* Apply the animation on load */
+}
+@keyframes moveUp {
+    to {
+      opacity: 1; /* At the end of the animation, make the container visible */
+      transform: translateY(-20px); /* Move the container 20px up */
+    }
+}
+
+.product{
+    width: 270px;
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px silver;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+
+}
+.product:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.product-detail{
+    margin-bottom:5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px 0 5px;
+}
+.product-name{
+    font-family: 'Bebas Neue', sans-serif;
+    padding-top:2px;
+    font-size: 20px;
+}
+.price{
+    font-size: 20px;
+    color: rgb(172, 2, 2);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.product img{
+    width: 100%;
+    height: 76%;
+    object-fit: fit;
+    border-radius: 10px 10px 0 0;
+}
+.pro-icons{
+    padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.heart-icon-emp{
+    font-size: 22px;
+}
+.heart-icon-full{
+    font-size: 22px;
+    color: red;
+    display: none;
+}
+.shop-icon{
+    font-size: 20px;
+    color: black;
+}
+.l-b{
+    font-size: 15px;
+    color: black;
+}
+
+
+
+
+/* Responsive: */
+
+
+
+@media  screen and (max-width: 449px){
+    .home-icon{
+        font-size: 17px;
+    }
+    .whatsapp-icon{
+        font-size: 22px;
+    }
+    .logo{
+        width: 280px;
+        height: 280px;
+    }
+    .collection{
+        font-size: 20px;
+    }
+    .products-parent{
+        gap: 10px;
+    }
+    .product{
+        width: 190px;
+        height: 290px;
+    }
+    .product img{
+        height: 73%;
+    }
+    .product-name{
+        font-size: 18px;
+    }
+    .price{
+        font-size: 18px;
+    }
+    .l-b{
+        font-size: 11px;
+    }
+}
+
+@media screen and ( min-width: 450px) and (max-width: 575px){
+    .home-icon{
+        font-size: 17px;
+    }
+    .whatsapp-icon{
+        font-size: 22px;
+    }
+    .logo{
+        width: 300px;
+        height: 280px;
+    }
+    .collection{
+        font-size: 22px;
+    }
+    .products-parent{
+        gap: 15px;
+    }
+    .product{
+        width: 200px;
+        height: 300px;
+    }
+    .product img{
+        height: 74%;
+    }
+    .product-name{
+        font-size: 18px;
+    }
+    .price{
+        font-size: 17px;
+    }
+    .l-b{
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .home-icon{
+        font-size: 18px;
+    }
+    .whatsapp-icon{
+        font-size: 23px;
+    }
+    .logo{
+        width: 350px;
+        height: 350px;
+    }
+    .collection{
+        font-size: 24px;
+    }
+    .products-parent{
+        gap: 25px;
+    }
+    .product{
+        width: 230px;
+        height: 300px;
+    }
+    .product img{
+        height: 74%;
+    }
+    .product-name{
+        font-size: 18px;
+    }
+    .price{
+        font-size: 17px;
+    }
+    .l-b{
+        font-size: 11px;
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width: 859px ){
+    .logo{
+        width: 400px;
+        height: 380px;
+    }
+    .collection{
+        font-size: 26px;
+    }
+    .products-parent{
+        gap: 20px;
+    }
+    .product{
+        width: 200px;
+        height: 300px;
+    }
+    .product img{
+        height: 74%;
+    }
+    .product-name{
+        font-size: 18px;
+    }
+    .price{
+        font-size: 17px;
+    }
+    .l-b{
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width: 860px) and (max-width: 991px){
+    .logo{
+        width: 400px;
+        height: 380px;
+    }
+    .collection{
+        font-size: 28px;
+    }
+    .products-parent{
+        gap: 20px;
+    }
+    .product{
+        width: 200px;
+        height: 310px;
+    }
+    .product img{
+        height: 74%;
+    }
+    .product-name{
+        font-size: 18px;
+    }
+    .price{
+        font-size: 17px;
+    }
+    .l-b{
+        font-size: 11px;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .products-parent{
+        gap: 20px;
+    }
+    .product{
+        width: 200px;
+        height: 310px;
+    }
+    .product img{
+        height: 74%;
+    }
+    .product-name{
+        font-size: 18px;
+    }
+    .price{
+        font-size: 17px;
+    }
+    .l-b{
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1350px){
+    .products-parent{
+        gap: 25px;
+    }
+    .product{
+        width: 240px;
+        height: 320px;
+    }
+    .product img{
+        height: 74%;
+    }
+}
+@media screen and (min-width: 1351px ) and (max-width: 1500px ) {
+    .products-parent{
+        gap: 30px;
+    }
+    .product{
+        width: 240px;
+        height: 325px;
+    }
+    .product img{
+        height: 74%;
+    }
+    .heart-icon-emp{
+        font-size: 22px;
+    }
+    .heart-icon-full{
+        font-size: 22px;
+    }
+    .shop-icon{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1601px){
+
+}

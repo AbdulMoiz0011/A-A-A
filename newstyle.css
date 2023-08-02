@@ -1,0 +1,491 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    padding: 10px 20px 0 20px;
+    background-color: #090909;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    font-family: 'Victor Mono', monospace;
+}
+
+.home{
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #FF8C00;
+}
+
+.products{
+    color: white;
+}
+.products ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+.products ul li{
+    font-size: 15px;
+    
+}
+.products  a:hover{
+    color: #FF8C00;
+    cursor: pointer;
+}
+.contact-btn{
+    padding-top: 10px;
+}
+.navbar button {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 20px 5px 20px;
+    background-color: #FF8C00;
+    border-radius: 20px;
+
+}
+.navbar button:hover{
+    background-color: white;
+    color: #090909;
+    cursor: pointer;
+}
+.navbar button a:hover{
+    color: #090909;
+}
+.whatsapp{
+    font-size: 30px;
+}
+.whatsapp:hover{
+    color: green;
+}
+
+
+
+
+
+.main{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #090909;
+    /* Change this for Smaller Screen Size */
+    padding:  90px 90px 40px 50px;
+}
+
+.brand h1{
+    color: white;
+    align-self: center;
+    justify-self: center;
+    font-family: 'Yatra One', cursive;
+    /* Change this for Smaller Screen Size */
+    font-size: 100px;                   
+    margin: 0;
+}
+
+.logo-img{
+    /* Change this for Smaller Screen Size */
+    width: 380px;
+    height: 333px;
+}
+
+.logo-mobile{
+    display: none;
+}
+
+
+
+
+
+.product-head{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Carter One', cursive;
+    color: #090909;
+    margin: 0;
+}
+
+
+
+
+
+
+.boxes{
+    margin-top: 5px;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    opacity: 0;
+    animation: moveUp 2.5s forwards; /* Apply the animation on load */
+}
+@keyframes moveUp {
+    to {
+      opacity: 1; /* At the end of the animation, make the container visible */
+      transform: translateY(-20px); /* Move the container 20px up */
+    }
+  }
+.image {
+    width: 100%;
+    height: 80%;
+    object-fit: fit;
+    border-radius: 10px 10px 0 0;
+}
+.box {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px silver;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+.box a{
+    color: #090909;
+}
+.box:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.product-name{
+    text-align: center;
+    /* font-family: 'Yatra One', cursive; */
+    font-family: 'Bebas Neue', sans-serif;
+    padding-top: 5%;
+}
+
+
+
+
+
+
+
+
+/* Styles for the footer container */
+.contact {
+    display: flex;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+    padding: 20px 100px 5px 100px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+  }
+  
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 5,
+  'opsz' 48 ;
+
+}
+
+
+
+
+@media  screen and (max-width: 449px){
+    .products{
+        display: none;
+    }
+    .home{
+        padding-top: 0;
+    }
+    .whatsapp{
+        font-size: 25px;
+    }
+    .contact-btn{
+        padding-top: 5px;
+    }
+    .navbar button{
+        font-size: 15px;
+        padding: 5px 10px 5px 10px;
+    }
+    .main{
+        padding: 25px 30px 45px 30px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .brand h1{
+        font-size: 35px;
+        display: none;
+    }
+    .logo-img{
+        width: 150px;
+        height: 120px;
+        display: none;
+    }
+    .logo-mobile{
+        width: 230px;
+        height: 200px;
+        display: flex;
+    }
+    .product-head{
+        font-size: 10px;
+    }
+    .box{
+        width: 150px;
+        height: 200px;
+    }
+    .product-name{
+        font-size: 13px;
+    }
+    .contact{
+        padding: 10px 0px 0px 0px;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and ( min-width: 450px) and (max-width: 575px){
+    .products{
+        display: none;
+    }
+    .whatsapp{
+        font-size: 26px;
+    }
+    .home{
+        padding-top: 0;
+    }
+    .contact-btn{
+        padding-top: 5px;
+    }
+    .navbar button{
+    font-size: 15px;
+    padding: 5px 15px 5px 15px;
+    }
+    .products{
+        display: none;
+    }
+    .main{
+        padding: 25px 30px 45px 30px;
+    }
+    .brand h1{
+        font-size: 30px;
+    }
+    .logo-img{
+        width: 150px;
+        height: 120px;
+    }
+    .product-head{
+        font-size: 11px;
+    }
+    .box{
+        width: 190px;
+        height: 230px;
+    }
+    .product-name{
+        font-size: 14px;
+    }
+    .contact{
+        padding: 10px 0px 0px 0px;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .products{
+        display: none;
+    }
+    .whatsapp{
+        font-size: 26px;
+    }
+    .main{
+        padding: 40px 40px 45px 40px;
+    }
+    .brand h1{
+        font-size: 40px;
+    }
+    .logo-img{
+        width: 180px;
+        height: 175px;
+    }
+    .product-head{
+        font-size: 12px;
+    }
+    .box{
+        width: 220px;
+        height: 240px;
+    }
+    .product-name{
+        font-size: 14px;
+    }
+    .contact{
+        padding: 10px 0px 0px 0px;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 859px ){
+    .products{
+        display: none;
+    }
+    .main{
+        padding: 40px 60px 40px 60px;
+    }
+    .brand h1{
+        font-size: 50px;
+    }
+    .logo-img{
+        width: 220px;
+        height: 200px;
+    }
+    .product-head{
+        font-size: 13px;
+    }
+    .box{
+        width: 230px;
+        height: 250px;
+    }
+    .product-name{
+        font-size: 14px;
+    }
+    .contact{
+        padding: 10px 0px 0px 0px;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 860px) and (max-width: 991px){
+    .products{
+        display: none;
+    }
+    .main{
+        padding: 50px 60px 40px 60px;
+    }
+    .brand h1{
+        font-size: 60px;
+    }
+    .logo-img{
+        width: 240px;
+        height: 220px;
+    }
+    .product-head{
+        font-size: 14px;
+    }
+    .box{
+        width: 240px;
+        height: 260px;
+    }
+    .product-name{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .main{
+        padding: 50px 60px 40px 60px;
+    }
+    .brand h1{
+        font-size: 70px;
+    }
+    .logo-img{
+        width: 280px;
+        height: 240px;
+    }
+    .product-head{
+        font-size: 15px;
+    }
+    .box{
+        width: 290px;
+        height: 330px;
+    }
+    .product-name{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1350px){
+    .main{
+        padding: 80px 60px 40px 60px;
+    }
+    .brand h1{
+        font-size: 80px;
+    }
+    .logo-img{
+        width: 325px;
+        height: 280px;
+    }
+    .product-head{
+        font-size: 16px;
+    }
+    .box{
+        width: 300px;
+        height: 340px;
+    }
+    .product-name{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1351px ) and (max-width: 1600px ) {
+    .main{
+        padding: 80px 50px 60px 60px;
+    }
+    .brand h1{
+        font-size: 80px;
+    }
+    .logo-img{
+        width: 360px;
+        height: 300px;
+    }
+    .product-head{
+        font-size: 18px;
+    }
+    .box{
+        width: 300px;
+        height: 350px;
+    }
+    .product-name{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1601px){
+    .main{
+        padding: 90px 150px 150px 100px;
+    }
+    .box{
+        width: 350px;
+        height: 370px;
+    }
+    .product-name{
+        font-size: 20px;
+    }
+    .contact{
+        justify-content: space-evenly;
+        align-content: center;
+       
+    }
+}
